@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import img1 from './images/computer.jpeg';
+import img2 from './images/mountains.jpeg';
+import img3 from './images/trees.jpeg';
+import img4 from './images/turntable.jpeg';
+import Carousel from './components/Carousel';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Carousel images={[img1, img2, img3, img4]} />
       </div>
     );
   }
