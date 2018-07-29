@@ -1,11 +1,18 @@
 .Carousel__img {
-  max-width: 100%;
+  width: 100%;
   display: block;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .Carousel {
   position: relative;
+  overflow: hidden;
+}
+
+.Carousel__img--animate {
+    position: absolute;
+    top: 0;
 }
 
 .Carousel__button {
